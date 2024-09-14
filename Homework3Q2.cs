@@ -4,19 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Prompt the user to enter an integer N
-        Console.Write("Enter an integer N: ");
-        int N = Convert.ToInt32(Console.ReadLine());
+   // Input the integer N
+        Console.Write("Assign an int value to N: ");
+        int N = int.Parse(Console.ReadLine());
 
         // Print the square pattern
-        for (int i = 0; i < N; i++) // Loop for rows
+        for (int i = 0; i < N; i++)  // Loop for each row
         {
-            for (int j = 0; j < N; j++) // Loop for columns
+            for (int j = 0; j < N; j++)  // Loop for each column
             {
-                Console.Write("* "); // Print '*' with a space
+                Console.Write("#");  // Print # character
             }
-            Console.WriteLine(); // Move to the next line after printing all columns in a row
+            Console.WriteLine();  // Move to the next line after printing all columns
         }
-    }
-    }
+}
+}
 
